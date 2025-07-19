@@ -676,12 +676,12 @@ const DashboardPage = () => {
                     <div
                       key={optIndex}
                       className={`p-2 rounded-md ${option === question.correctAnswer && option === userAnswers[index]
-                          ? "bg-green-100 border border-green-300"
-                          : option === question.correctAnswer
-                            ? "bg-green-50 border border-green-200"
-                            : option === userAnswers[index]
-                              ? "bg-red-100 border border-red-300"
-                              : "bg-gray-50 border border-gray-200"
+                        ? "bg-green-100 border border-green-300"
+                        : option === question.correctAnswer
+                          ? "bg-green-50 border border-green-200"
+                          : option === userAnswers[index]
+                            ? "bg-red-100 border border-red-300"
+                            : "bg-gray-50 border border-gray-200"
                         }`}
                     >
                       <div className="flex items-start justify-between">
@@ -782,7 +782,7 @@ const DashboardPage = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="text-2xl font-thin tracking-wide text-gray-900">
-              LangEdu
+              Lango
             </Link>
             <div className="flex items-center space-x-8">
               <div className="relative">
@@ -1194,7 +1194,7 @@ const DashboardPage = () => {
             </div>
           </div>
           <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row md:justify-between items-center">
-            <p className="text-sm text-gray-600">© 2025 LangEdu. All rights reserved.</p>
+            <p className="text-sm text-gray-600">© 2025 Lango. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-600 hover:text-purple-600">
                 <span className="sr-only">Facebook</span>

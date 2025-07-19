@@ -63,7 +63,7 @@ const LandingPage = () => {
       <main className="relative z-10 mt-40">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-7xl md:text-8xl font-thin tracking-wide text-gray-900 mb-2 animate-fade-in-up">
-            LangEdu
+            Lango
           </h1>
           <h2 className="text-5xl md:text-6xl font-serif italic text-gray-600 mb-8 animate-fade-in-up-delay">
             Learning
@@ -102,21 +102,21 @@ const LandingPage = () => {
         <div className="mt-32 max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light text-gray-800 mb-4">What & Why</h2>
-            <p className="text-gray-500">Discover how LangEdu is revolutionizing language learning</p>
+            <p className="text-gray-500">Discover how Lango is revolutionizing language learning</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:bg-white/50 transform hover:-translate-y-1 transition-all duration-300">
-              <h3 className="text-2xl font-light text-gray-800 mb-4">What is LangEdu?</h3>
+                <h3 className="text-2xl font-light text-gray-800 mb-4">What is Lango?</h3>
               <p className="text-gray-600 leading-relaxed">
-                LangEdu is an innovative language learning platform that combines traditional learning methods with blockchain technology. Our unique approach allows learners to earn tokens while mastering new languages, creating a rewarding educational experience that keeps you motivated and engaged.
+                Lango is an innovative language learning platform that combines traditional learning methods with blockchain technology. Our unique approach allows learners to earn tokens while mastering new languages, creating a rewarding educational experience that keeps you motivated and engaged.
               </p>
             </div>
 
             <div className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:bg-white/50 transform hover:-translate-y-1 transition-all duration-300">
               <h3 className="text-2xl font-light text-gray-800 mb-4">Why Choose Us?</h3>
               <p className="text-gray-600 leading-relaxed">
-                We believe learning should be both effective and rewarding. Our platform offers personalized learning paths, native speaker interactions, and a token-based reward system that recognizes your progress. With LangEdu, you're not just learning a language – you're investing in your future.
+                We believe learning should be both effective and rewarding. Our platform offers personalized learning paths, native speaker interactions, and a token-based reward system that recognizes your progress. With Lango, you're not just learning a language – you're investing in your future.
               </p>
             </div>
           </div>
@@ -177,7 +177,7 @@ const LandingPage = () => {
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200">
             <p className="text-center text-sm text-gray-500">
-              © 2024 LangEdu. All rights reserved.
+              © 2024 Lango. All rights reserved.
             </p>
           </div>
         </div>

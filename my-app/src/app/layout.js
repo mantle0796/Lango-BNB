@@ -23,10 +23,10 @@ const geistMono = localFont({
 
 export default function RootLayout({ children }) {
   const opts = {
-    redirectUri: 'https://langedu.vercel.app/redirect', // Adjust this URL
+    redirectUri: 'https://lango.vercel.app/redirect', // Adjust this URL
     referralCode: 'PARTNER6', // Assign partner code
   };
-  
+
   return (
     <html lang="en">
       <body
