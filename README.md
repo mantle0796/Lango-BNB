@@ -1,8 +1,8 @@
-# **Lango (Built on Educhain Testnet)**  
+# **Lango (Built on BNB Chain Testnet)**  
 **A Decentralized App for Anonymous Language Exchange**  
 
 ## **Overview**  
-Lango is a next-generation decentralized application (dApp) designed for anonymous language exchange, empowering global learners through blockchain security, AI-powered assessment, and personalized token incentives. Built on the **Educhain Testnet**, Lango ensures secure, interactive, and rewarding language learning experiences while maintaining user privacy.  
+Lango is a next-generation decentralized application (dApp) designed for anonymous language exchange, empowering global learners through blockchain security, AI-powered assessment, and personalized token incentives. Built on the **BNB Chain Testnet**, Lango ensures secure, interactive, and rewarding language learning experiences while maintaining user privacy.  
 
 ## **Key Features**  
 
@@ -11,7 +11,7 @@ Lango is a next-generation decentralized application (dApp) designed for anonymo
 - Full control over your personal data and interactions.  
 
 ### 🔹 **Blockchain Security & Tokenized Rewards**  
-- Built on **Educhain**, ensuring tamper-proof and transparent interactions.  
+- Built on **BNB Chain**, ensuring tamper-proof and transparent interactions.  
 - Earn **Lango tokens** for progress and engagement, supporting a **DeFi-driven learning ecosystem**.  
 - Trade or utilize tokens within the platform for premium learning resources.  
 
@@ -29,7 +29,7 @@ Lango is a next-generation decentralized application (dApp) designed for anonymo
 - **Peer Review & Community Feedback:** Get corrections and insights from fellow learners.  
 - **NFT-Based Language Certificates:** Earn verifiable blockchain-based certificates upon course completion.  
 
-## **New Features in EDUCHAIN SEMESTER 3**  
+## **New Features in BNB CHAIN SEMESTER 3**  
 🚀 **Advanced AI Conversation Practice** – Engage in AI-powered dialogues for immersive learning.  
 📢 **Grammar & Pronunciation Checker** – Instant AI feedback on spoken and written input.  
 📚 **Custom Learning Paths** – Follow AI-suggested courses based on progress.  
@@ -44,7 +44,7 @@ Lango is a next-generation decentralized application (dApp) designed for anonymo
 ✅ **Privacy-Focused** – Anonymity and security at the core of the platform.  
 
 ## **Add Lango Token to Your Wallet**  
-Manually add **Lango token** to your wallet on **Educhain**:  
+Manually add **Lango token** to your wallet on **BNB Chain**:  
 
 **Contract Address:** `0xecd86bd57e1acb95ba48ac80bc9b806e83e2eaca`  
 
