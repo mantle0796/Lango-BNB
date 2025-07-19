@@ -1,24 +1,28 @@
 'use client'
 import Link from 'next/link';
 import React from 'react';
-import LoginButton from '@/app/components/LoginButton';
-import { useOCAuth } from '@opencampus/ocid-connect-js';
+
+
+
+import { useState } from 'react';
 
 const LandingPage = () => {
-  const { authState, ocAuth } = useOCAuth();
+  const [walletConnected, setWalletConnected] = useState(false);
+  const [walletAddress, setWalletAddress] = useState("");
 
-  // Ensure authState is defined before accessing its properties
-  if (!authState) {
-    return <div>Loading authentication...</div>;
-  }
-
-  if (authState.error) {
-    return <div>Error: {authState.error.message}</div>;
-  }
-
-  if (authState.isLoading) {
-    return <div>Loading...</div>;
-  }
+  const connectWallet = async () => {
+    if (typeof window.ethereum !== "undefined") {
+      try {
+        const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+        setWalletAddress(accounts[0]);
+        setWalletConnected(true);
+      } catch (error) {
+        console.error("Error connecting to wallet:", error);
+      }
+    } else {
+      alert("MetaMask is not installed. Please install it to use this feature.");
+    }
+  };
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -40,11 +44,15 @@ const LandingPage = () => {
                 <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-300">
                   Get Tokens
                 </a>
-                {authState.isAuthenticated ? (
-                  <p>You are logged in! {JSON.stringify(ocAuth.getAuthState().OCId)}</p>
-                ) : (
-                  <LoginButton />
-                )}
+                <button
+                  onClick={connectWallet}
+                  className={`px-4 py-2 rounded-full font-medium transition-colors duration-300 ${walletConnected ? 'bg-green-500 cursor-default' : 'bg-blue-600 hover:bg-blue-700 cursor-pointer'} text-white`}
+                  disabled={walletConnected}
+                >
+                  {walletConnected
+                    ? `Connected: ${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`
+                    : 'Connect Wallet'}
+                </button>
               </div>
             </div>
           </div>

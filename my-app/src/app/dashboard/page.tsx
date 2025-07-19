@@ -148,7 +148,7 @@ const DashboardPage = () => {
     const signer = await provider.getSigner()
     const address = await signer.getAddress()
     console.log("Wallet Address:", address)
-    const humorTokenContract = new ethers.Contract(contractAddress, lingPro.abi, signer)
+    const humorTokenContract = new ethers.Contract(contractAddress, lingPro, signer)
     console.log(claimAmt, "========inside withdraw===")
 
     await (
@@ -174,7 +174,7 @@ const DashboardPage = () => {
     const signer = await provider.getSigner()
     const address = await signer.getAddress()
     console.log("Wallet Address:", address)
-    const humorTokenContract = new ethers.Contract(contractAddress, lingPro.abi, signer)
+    const humorTokenContract = new ethers.Contract(contractAddress, lingPro, signer)
     console.log(claimAmt, "========inside withdraw===")
 
     await (await humorTokenContract.mint(address, ethers.parseUnits(claimAmt.toString(), 18))).wait()
@@ -675,15 +675,14 @@ const DashboardPage = () => {
                   {question.options.map((option, optIndex) => (
                     <div
                       key={optIndex}
-                      className={`p-2 rounded-md ${
-                        option === question.correctAnswer && option === userAnswers[index]
+                      className={`p-2 rounded-md ${option === question.correctAnswer && option === userAnswers[index]
                           ? "bg-green-100 border border-green-300"
                           : option === question.correctAnswer
                             ? "bg-green-50 border border-green-200"
                             : option === userAnswers[index]
                               ? "bg-red-100 border border-red-300"
                               : "bg-gray-50 border border-gray-200"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-start justify-between">
                         <span>{option}</span>
@@ -698,9 +697,8 @@ const DashboardPage = () => {
                     <span className="text-sm font-medium mr-2">Your answer:</span>
                     {userAnswers[index] ? (
                       <span
-                        className={`text-sm font-medium ${
-                          userAnswers[index] === question.correctAnswer ? "text-green-600" : "text-red-600"
-                        }`}
+                        className={`text-sm font-medium ${userAnswers[index] === question.correctAnswer ? "text-green-600" : "text-red-600"
+                          }`}
                       >
                         {userAnswers[index]}
                         {userAnswers[index] === question.correctAnswer ? " ✓" : " ✗"}
